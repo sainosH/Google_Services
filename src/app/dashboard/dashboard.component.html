@@ -1,0 +1,50 @@
+<div class="dashboard-container">
+  <mat-toolbar color="primary" class="header">
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Liga MX - Panel de Control</span>
+    <div class="spacer"></div>
+    <button mat-icon-button>
+      <mat-icon>notifications</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </mat-toolbar>
+  
+  <div class="dashboard-content">
+    <mat-sidenav-container>
+      <mat-sidenav mode="side" opened>
+        <mat-nav-list>
+          <a mat-list-item routerLink="/dashboard/home">
+            <mat-icon>home</mat-icon>
+            <span>Inicio</span>
+          </a>
+          <a mat-list-item routerLink="/dashboard/teams">
+            <mat-icon>groups</mat-icon>
+            <span>Equipos</span>
+          </a>
+          <a mat-list-item routerLink="/dashboard/matches">
+            <mat-icon>sports_soccer</mat-icon>
+            <span>Partidos</span>
+          </a>
+          <a mat-list-item routerLink="/dashboard/players">
+            <mat-icon>person</mat-icon>
+            <span>Jugadores</span>
+          </a>
+          <a mat-list-item routerLink="/dashboard/stats">
+            <mat-icon>bar_chart</mat-icon>
+            <span>Estadísticas</span>
+          </a>
+        </mat-nav-list>
+      </mat-sidenav>
+      
+      <mat-sidenav-content>
+        <div class="content-container">
+          <router-outlet></router-outlet>
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>
