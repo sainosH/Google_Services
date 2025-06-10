@@ -1,13 +1,10 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
-import { inject } from '@angular/core';
-import { Auth } from '@angular/fire/auth';
-import { NgModule } from '@angular/core';
-import { RouterModule, CanActivateFn } from '@angular/router';
-import { map } from 'rxjs';
 import { RegisterComponent } from './pages/register/register.component';
 import { EquiposComponent } from './equipos/equipos.component';
-import { canActivate } from '@angular/fire/auth-guard'; // si estás usando guard
+import { inject } from '@angular/core';
+import { Auth } from '@angular/fire/auth';
+import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
 
 const isLoggedIn = () => {
   const auth = inject(Auth);
@@ -22,18 +19,20 @@ const isLoggedIn = () => {
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  {
-    path: 'dashboard',
-    loadComponent: () =>
-      import('./pages/dashboard/dashboard.component').then(
-        (m) => m.DashboardComponent
-      ),
+  {path: '',
+    component: AuthLayoutComponent,
     canActivate: [isLoggedIn],
-  },
-  {
-    path: 'equipos',
-    component: EquiposComponent,
-    canActivate: [isLoggedIn], // ⬅️ protege esta ruta también
+    children: [
+      {
+        path: 'dashboard', loadComponent: () =>
+          import('./pages/dashboard/dashboard.component').then(
+            (m) => m.DashboardComponent),
+      },
+      {
+        path: 'equipos',component: EquiposComponent,
+      },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+    ],
   },
   { path: '**', redirectTo: 'login' },
 ];

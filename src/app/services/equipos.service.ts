@@ -41,34 +41,3 @@ export class EquipoService {
     );
   }
 }
-
-/*import { Injectable } from '@angular/core';
-import { Firestore, collection, collectionData } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
-
-
-export interface Equipo{
-  id?: string;
-  nombre: string;
-  goles: number;
-  asistencias: number;
-  jugadores: string[];
-}
-
-@Injectable({ providedIn: 'root' })
-export class EquiposService {
-  constructor(private firestore: Firestore) {}
-
-  getEquipos(): Observable<Equipo[]> {
-    const equiposRef = collection(
-      this.firestore, 'equipos');
-    return collectionData(equiposRef, { idField: 'id' }) as Observable<Equipo[]>;
-  }
-}
-
-
-  /*
-  agregarEquipo(equipo: Equipo) {
-    const equiposRef = collection(this.firestore, 'equipos');
-    return addDoc(equiposRef, equipo);
-  }*/
