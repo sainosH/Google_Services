@@ -1,3 +1,33 @@
 import { Routes } from '@angular/router';
+import { LoginComponent } from './pages/login/login.component';
+import { inject } from '@angular/core';
+import { Auth } from '@angular/fire/auth';
+import { NgModule } from '@angular/core';
+import { RouterModule, CanActivateFn } from '@angular/router';
+import { map } from 'rxjs';
+import { RegisterComponent } from './pages/register/register.component';
 
-export const routes: Routes = [];
+
+const isLoggedIn = () => {
+const auth = inject(Auth);
+return new Promise<boolean>((resolve) => {
+const unsub = auth.onAuthStateChanged(user => {
+resolve(!!user);
+unsub();
+});
+});
+};
+
+export const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+  {
+    path: 'dashboard',
+    loadComponent: () =>
+      import('./pages/dashboard/dashboard.component').then(
+        (m) => m.DashboardComponent
+      ),
+    canActivate: [isLoggedIn],
+  },
+  { path: '**', redirectTo: 'login' },
+  { path: 'register', component: RegisterComponent },
+];
