@@ -1,0 +1,15 @@
+.login-card {
+    max-width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.register-link {
+    margin-top: 1rem;
+}
