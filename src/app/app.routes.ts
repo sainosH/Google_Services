@@ -20,14 +20,12 @@ unsub();
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   {
     path: 'dashboard',
     loadComponent: () =>
       import('./pages/dashboard/dashboard.component').then(
-        (m) => m.DashboardComponent
-      ),
-    canActivate: [isLoggedIn],
+        (m) => m.DashboardComponent), canActivate: [isLoggedIn],
   },
   { path: '**', redirectTo: 'login' },
-  { path: 'register', component: RegisterComponent },
 ];

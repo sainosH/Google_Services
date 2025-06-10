@@ -7,33 +7,27 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-register',
   standalone: true,
   imports: [FormsModule],
-  template: `<div>
-    <h2>Crear cuenta</h2>
-    <form (ngSubmit)="onRegister()">
-      <input [(ngModel)]="email" name="email" placeholder="Correo" required />
-      <input
-        [(ngModel)]="password"
-        name="password"
-        type="password"
-        placeholder="Contraseña"
-        required
-      />
-      <button type="submit">Registrarse</button>
-    </form> 
-  </div>`,
+  templateUrl: './register.component.html',
 })
 export class RegisterComponent {
   email = '';
   password = '';
+  confirmPassword = '';
 
   constructor(private authService: AuthService, private router: Router) {}
 
   onRegister() {
+    if (this.password !== this.confirmPassword) {
+      alert('Las contraseñas no coinciden');
+      return;
+    }
+
     this.authService
       .register(this.email, this.password)
       .then(() => {
-        console.log('¡Registro exitoso!');
-        this.router.navigateByUrl('/dashboard');
+        this.authService.logout(); // 🔴 Cerramos la sesión después del registro
+        alert('Cuenta creada con éxito. Ahora inicia sesión.');
+        this.router.navigateByUrl('/login');
       })
       .catch((err) => alert('Error al registrar: ' + err.message));
   }

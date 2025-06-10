@@ -1,11 +1,20 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
+import { NgIf, AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  standalone: true,
+  imports: [NgIf, AsyncPipe],
 })
 export class DashboardComponent {
+  constructor(public authService: AuthService, private router: Router) {}
 
+  logout() {
+    this.authService.logout().then(() => {
+      this.router.navigateByUrl('/login');
+    });
+  }
 }
