@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
-import { NgIf, AsyncPipe } from '@angular/common';
+import { NgIf, AsyncPipe, CommonModule } from '@angular/common';
 import { CargaEquiposService } from '../../services/carga-equipos.service';
 
 
 @Component({
   selector: 'app-dashboard',
+  imports: [CommonModule, RouterLink ],
   templateUrl: './dashboard.component.html',
   standalone: true,
 })
@@ -22,8 +23,12 @@ export class DashboardComponent {
       this.router.navigateByUrl('/login');
     });
   }
-  cargar() {
-    this.cargaEquiposService.subirEquipos();
+  cargarClausura() {
+    this.cargaEquiposService.subirEquiposClausura();
+  }
+
+  cargarApertura() {
+    this.cargaEquiposService.subirEquiposApertura();
   }
 }
 

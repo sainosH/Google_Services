@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Equipo } from '../models/equipo.model';
 import { EquipoService } from '../services/equipos.service';
 import { CommonModule } from '@angular/common';
+import { Apertura } from '../models/equipo.model';
 
 @Component({
   selector: 'app-equipos',
@@ -11,47 +11,42 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./equipos.component.css'],
 })
 export class EquiposComponent implements OnInit {
-  equipos: Equipo[] = [];
+  activeTab: 'apertura' | 'clausura' = 'apertura';
+  Apertura: Apertura[] = [];
+  Clausura: Apertura[] = [];
 
   constructor(private equipoService: EquipoService) {}
 
   ngOnInit(): void {
-    console.log('Inicializando componente de equipos...');
-    this.equipoService.getEquipos().subscribe({
+    console.log('Inicializando componente...');
+
+    this.equipoService.getEquiposApertura().subscribe({
       next: (data) => {
-        console.log('Datos recibidos:', data);
-        this.equipos = data.sort((a, b) => b.pts - a.pts);
+        console.log('Datos de Apertura recibidos:', data);
+        this.Apertura = data.sort((a, b) => b.pts - a.pts);
       },
-      error: (error) => {
-        console.error('Error al obtener equipos:', error);
+      error: (error) => console.error('Error al cargar Apertura:', error),
+    });
+
+    this.equipoService.getEquiposClausura().subscribe({
+      next: (data) => {
+        console.log('Datos de Clausura recibidos:', data);
+        this.Clausura = data.sort((a, b) => {
+          // Primero por puntos (descendente)
+          if (b.pts !== a.pts) return b.pts - a.pts;
+
+          // Si hay empate en puntos, por diferencia de goles (descendente)
+          if (b.gf !== a.gf) return b.gf - a.gf;
+
+          // Si persiste el empate, por goles a favor (descendente)
+          return b.gf - a.gf;
+        });
       },
+      error: (error) => console.error('Error al cargar Clausura:', error),
     });
   }
-}
 
-/*
-import { Component, OnInit } from '@angular/core';
-import { EquiposService, Equipo } from '../services/equipos.service';
-import { CommonModule } from '@angular/common';
-
-@Component({
-  selector: 'app-equipos',
-  standalone: true, 
-  imports: [CommonModule],
-  templateUrl: './equipos.component.html',
-  styleUrl: './equipos.component.css',
-})
-export class EquiposComponent implements OnInit {
-  equipos: Equipo[] = [];
-
-  constructor(private equiposService: EquiposService) {}
-
-  ngOnInit() {
-    this.equiposService.getEquipos().subscribe((data) => {
-      console.log('Equipos recibidos:', data);
-      this.equipos = data;
-    });
+  get equiposActuales(): Apertura[] {
+    return this.activeTab === 'apertura' ? this.Apertura : this.Clausura;
   }
 }
-
-*/
