@@ -1,5 +1,5 @@
 <div class="p-4">
-<!--
+<!-->
     <div class="flex justify-between items-center mb-4">
         <p *ngIf="authService.currentUser$ | async as user" class="text-gray-700">
             Estás conectado como: <strong>{{ user.email }}</strong>
@@ -28,12 +28,17 @@
         Equipos
     </button>
 </div>
--->
+
 
 <div class="p-4">
     <h1 class="text-xl font-bold mb-4">Dashboard</h1>
-    <button (click)="cargar()" class="px-4 py-2 bg-blue-600 text-white rounded-md">Cargar Equipos</button>
+    <button (click)="cargarClausura()" class="px-4 py-2 bg-blue-600 text-white rounded-md">Cargar Equipos</button>
 </div>
+<div class="p-4">
+    <h1 class="text-xl font-bold mb-4">Dashboard</h1>
+    <button (click)="cargarApertura()" class="px-4 py-2 bg-blue-600 text-white rounded-md">Cargar Equipos</button>
+</div>
+-->
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
