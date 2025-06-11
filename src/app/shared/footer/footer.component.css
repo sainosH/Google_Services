@@ -1,0 +1,14 @@
+.active {
+    background-color: #09537f; /* Color de fondo cuando está activo */
+    color: #ffffff; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    border-bottom: 2px solid #afcae5; /* Subrayado */
+}
+
+/* Para pantallas grandes (md: en adelante) */
+@media (min-width: 768px) {
+    .active {
+        background-color: transparent; /* Fondo transparente en desktop */
+        border-bottom: 2px solid #afcae5; /* Solo subrayado */
+    }
+}
