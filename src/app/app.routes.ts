@@ -1,4 +1,4 @@
-import { Routes, Router } from '@angular/router'; // Añade Router aquí
+/*import { Routes, Router } from '@angular/router'; // Añade Router aquí
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { EquiposComponent } from './equipos/equipos.component';
@@ -72,8 +72,8 @@ export const routes: Routes = [
   },
   { path: '**', redirectTo: 'login' },
 ];
-
-/*import { Routes } from '@angular/router';
+*/
+import { Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { EquiposComponent } from './equipos/equipos.component';
@@ -112,4 +112,3 @@ export const routes: Routes = [
   { path: '**', redirectTo: 'login' },
 ];
 
-*/
