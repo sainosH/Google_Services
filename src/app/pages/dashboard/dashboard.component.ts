@@ -3,6 +3,7 @@ import { AuthService } from '../../services/auth.service';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { NgIf, AsyncPipe, CommonModule } from '@angular/common';
 import { CargaEquiposService } from '../../services/carga-equipos.service';
+import { CargaPartidosService } from '../../services/carga-partidos.service';
 
 
 @Component({
@@ -15,7 +16,8 @@ export class DashboardComponent {
   constructor(
     public authService: AuthService,
     private router: Router,
-    private cargaEquiposService: CargaEquiposService
+    private cargaEquiposService: CargaEquiposService,
+    private cargaPartidosService: CargaPartidosService
   ) {}
 
   logout() {
@@ -29,6 +31,10 @@ export class DashboardComponent {
 
   cargarApertura() {
     this.cargaEquiposService.subirEquiposApertura();
+  }
+
+  cargarPartidos(){
+    this.cargaPartidosService.subirPartidos();
   }
 }
 

@@ -1,0 +1,277 @@
+{
+  "torneo": "APERTURA 2025_LIGAMX",
+  "jornadas": [
+    {
+      "numero": "J1",
+      "inicio_jornada": "2025-06-13",
+      "fin_jornada": "2025-06-15",
+      "partidos": [
+        {"local": "Toluca", "visita": "América", "fecha": "2025-06-13", "hora": "19:00"},
+        {"local": "Cruz Azul", "visita": "Tigres", "fecha": "2025-06-13", "hora": "21:00"},
+        {"local": "Necaxa", "visita": "León", "fecha": "2025-06-14", "hora": "18:30"},
+        {"local": "Monterrey", "visita": "Pachuca", "fecha": "2025-06-14", "hora": "19:00"},
+        {"local": "Juárez", "visita": "Pumas", "fecha": "2025-06-14", "hora": "21:00"},
+        {"local": "Guadalajara", "visita": "Querétaro", "fecha": "2025-06-15", "hora": "18:30"},
+        {"local": "Tijuana", "visita": "Atlas", "fecha": "2025-06-15", "hora": "19:00"},
+        {"local": "Atl. San Luis", "visita": "Mazatlán", "fecha": "2025-06-13", "hora": "21:00"},
+        {"local": "Puebla", "visita": "Santos", "fecha": "2025-06-15", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J2",
+      "inicio_jornada": "2025-06-20",
+      "fin_jornada": "2025-06-22",
+      "partidos": [
+        {"local": "América", "visita": "Cruz Azul", "fecha": "2025-06-20", "hora": "19:00"},
+        {"local": "Tigres", "visita": "Necaxa", "fecha": "2025-06-20", "hora": "21:00"},
+        {"local": "León", "visita": "Monterrey", "fecha": "2025-06-21", "hora": "18:30"},
+        {"local": "Pachuca", "visita": "Juárez", "fecha": "2025-06-21", "hora": "19:00"},
+        {"local": "Pumas", "visita": "Guadalajara", "fecha": "2025-06-21", "hora": "21:00"},
+        {"local": "Querétaro", "visita": "Tijuana", "fecha": "2025-06-22", "hora": "18:30"},
+        {"local": "Atlas", "visita": "Atl. San Luis", "fecha": "2025-06-22", "hora": "19:00"},
+        {"local": "Mazatlán", "visita": "Puebla", "fecha": "2025-06-20", "hora": "21:00"},
+        {"local": "Santos", "visita": "Toluca", "fecha": "2025-06-22", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J3",
+      "inicio_jornada": "2025-06-27",
+      "fin_jornada": "2025-06-29",
+      "partidos": [
+        {"local": "Cruz Azul", "visita": "Toluca", "fecha": "2025-06-27", "hora": "19:00"},
+        {"local": "Necaxa", "visita": "América", "fecha": "2025-06-27", "hora": "21:00"},
+        {"local": "Monterrey", "visita": "Tigres", "fecha": "2025-06-28", "hora": "18:30"},
+        {"local": "Juárez", "visita": "León", "fecha": "2025-06-28", "hora": "19:00"},
+        {"local": "Guadalajara", "visita": "Pachuca", "fecha": "2025-06-28", "hora": "21:00"},
+        {"local": "Tijuana", "visita": "Pumas", "fecha": "2025-06-29", "hora": "18:30"},
+        {"local": "Atl. San Luis", "visita": "Querétaro", "fecha": "2025-06-29", "hora": "19:00"},
+        {"local": "Puebla", "visita": "Atlas", "fecha": "2025-06-27", "hora": "21:00"},
+        {"local": "Santos", "visita": "Mazatlán", "fecha": "2025-06-29", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J4",
+      "inicio_jornada": "2025-07-04",
+      "fin_jornada": "2025-07-06",
+      "partidos": [
+        {"local": "Toluca", "visita": "Necaxa", "fecha": "2025-07-04", "hora": "19:00"},
+        {"local": "América", "visita": "Monterrey", "fecha": "2025-07-04", "hora": "21:00"},
+        {"local": "Tigres", "visita": "Juárez", "fecha": "2025-07-05", "hora": "18:30"},
+        {"local": "León", "visita": "Guadalajara", "fecha": "2025-07-05", "hora": "19:00"},
+        {"local": "Pachuca", "visita": "Tijuana", "fecha": "2025-07-05", "hora": "21:00"},
+        {"local": "Pumas", "visita": "Atl. San Luis", "fecha": "2025-07-06", "hora": "18:30"},
+        {"local": "Querétaro", "visita": "Puebla", "fecha": "2025-07-06", "hora": "19:00"},
+        {"local": "Atlas", "visita": "Santos", "fecha": "2025-07-04", "hora": "21:00"},
+        {"local": "Mazatlán", "visita": "Cruz Azul", "fecha": "2025-07-06", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J5",
+      "inicio_jornada": "2025-07-11",
+      "fin_jornada": "2025-07-13",
+      "partidos": [
+        {"local": "Monterrey", "visita": "Toluca", "fecha": "2025-07-11", "hora": "19:00"},
+        {"local": "Juárez", "visita": "América", "fecha": "2025-07-11", "hora": "21:00"},
+        {"local": "Guadalajara", "visita": "Tigres", "fecha": "2025-07-12", "hora": "18:30"},
+        {"local": "Tijuana", "visita": "León", "fecha": "2025-07-12", "hora": "19:00"},
+        {"local": "Atl. San Luis", "visita": "Pachuca", "fecha": "2025-07-12", "hora": "21:00"},
+        {"local": "Puebla", "visita": "Pumas", "fecha": "2025-07-13", "hora": "18:30"},
+        {"local": "Santos", "visita": "Querétaro", "fecha": "2025-07-13", "hora": "19:00"},
+        {"local": "Cruz Azul", "visita": "Mazatlán", "fecha": "2025-07-11", "hora": "21:00"},
+        {"local": "Necaxa", "visita": "Atlas", "fecha": "2025-07-13", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J6",
+      "inicio_jornada": "2025-07-18",
+      "fin_jornada": "2025-07-20",
+      "partidos": [
+        {"local": "Toluca", "visita": "Juárez", "fecha": "2025-07-18", "hora": "19:00"},
+        {"local": "América", "visita": "Guadalajara", "fecha": "2025-07-18", "hora": "21:00"},
+        {"local": "Tigres", "visita": "Tijuana", "fecha": "2025-07-19", "hora": "18:30"},
+        {"local": "León", "visita": "Atl. San Luis", "fecha": "2025-07-19", "hora": "19:00"},
+        {"local": "Pachuca", "visita": "Puebla", "fecha": "2025-07-19", "hora": "21:00"},
+        {"local": "Pumas", "visita": "Santos", "fecha": "2025-07-20", "hora": "18:30"},
+        {"local": "Querétaro", "visita": "Cruz Azul", "fecha": "2025-07-20", "hora": "19:00"},
+        {"local": "Atlas", "visita": "Monterrey", "fecha": "2025-07-18", "hora": "21:00"},
+        {"local": "Mazatlán", "visita": "Necaxa", "fecha": "2025-07-20", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J7",
+      "inicio_jornada": "2025-07-25",
+      "fin_jornada": "2025-07-27",
+      "partidos": [
+        {"local": "Guadalajara", "visita": "Toluca", "fecha": "2025-07-25", "hora": "19:00"},
+        {"local": "Tijuana", "visita": "América", "fecha": "2025-07-25", "hora": "21:00"},
+        {"local": "Atl. San Luis", "visita": "Tigres", "fecha": "2025-07-26", "hora": "18:30"},
+        {"local": "Puebla", "visita": "León", "fecha": "2025-07-26", "hora": "19:00"},
+        {"local": "Santos", "visita": "Pachuca", "fecha": "2025-07-26", "hora": "21:00"},
+        {"local": "Cruz Azul", "visita": "Pumas", "fecha": "2025-07-27", "hora": "18:30"},
+        {"local": "Monterrey", "visita": "Mazatlán", "fecha": "2025-07-27", "hora": "19:00"},
+        {"local": "Juárez", "visita": "Atlas", "fecha": "2025-07-25", "hora": "21:00"},
+        {"local": "Necaxa", "visita": "Querétaro", "fecha": "2025-07-27", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J8",
+      "inicio_jornada": "2025-08-01",
+      "fin_jornada": "2025-08-03",
+      "partidos": [
+        {"local": "Toluca", "visita": "Tijuana", "fecha": "2025-08-01", "hora": "19:00"},
+        {"local": "América", "visita": "Atl. San Luis", "fecha": "2025-08-01", "hora": "21:00"},
+        {"local": "Tigres", "visita": "Puebla", "fecha": "2025-08-02", "hora": "18:30"},
+        {"local": "León", "visita": "Santos", "fecha": "2025-08-02", "hora": "19:00"},
+        {"local": "Pachuca", "visita": "Cruz Azul", "fecha": "2025-08-02", "hora": "21:00"},
+        {"local": "Pumas", "visita": "Monterrey", "fecha": "2025-08-03", "hora": "18:30"},
+        {"local": "Querétaro", "visita": "Juárez", "fecha": "2025-08-03", "hora": "19:00"},
+        {"local": "Atlas", "visita": "Mazatlán", "fecha": "2025-08-01", "hora": "21:00"},
+        {"local": "Necaxa", "visita": "Guadalajara", "fecha": "2025-08-03", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J9",
+      "inicio_jornada": "2025-08-08",
+      "fin_jornada": "2025-08-10",
+      "partidos": [
+        {"local": "Atl. San Luis", "visita": "Toluca", "fecha": "2025-08-08", "hora": "19:00"},
+        {"local": "Puebla", "visita": "América", "fecha": "2025-08-08", "hora": "21:00"},
+        {"local": "Santos", "visita": "Tigres", "fecha": "2025-08-09", "hora": "18:30"},
+        {"local": "Cruz Azul", "visita": "León", "fecha": "2025-08-09", "hora": "19:00"},
+        {"local": "Monterrey", "visita": "Pachuca", "fecha": "2025-08-09", "hora": "21:00"},
+        {"local": "Juárez", "visita": "Pumas", "fecha": "2025-08-10", "hora": "18:30"},
+        {"local": "Mazatlán", "visita": "Querétaro", "fecha": "2025-08-10", "hora": "19:00"},
+        {"local": "Guadalajara", "visita": "Atlas", "fecha": "2025-08-08", "hora": "21:00"},
+        {"local": "Tijuana", "visita": "Necaxa", "fecha": "2025-08-10", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J10",
+      "inicio_jornada": "2025-08-15",
+      "fin_jornada": "2025-08-17",
+      "partidos": [
+        {"local": "Toluca", "visita": "Puebla", "fecha": "2025-08-15", "hora": "19:00"},
+        {"local": "América", "visita": "Santos", "fecha": "2025-08-15", "hora": "21:00"},
+        {"local": "Tigres", "visita": "Cruz Azul", "fecha": "2025-08-16", "hora": "18:30"},
+        {"local": "León", "visita": "Monterrey", "fecha": "2025-08-16", "hora": "19:00"},
+        {"local": "Pachuca", "visita": "Juárez", "fecha": "2025-08-16", "hora": "21:00"},
+        {"local": "Pumas", "visita": "Mazatlán", "fecha": "2025-08-17", "hora": "18:30"},
+        {"local": "Querétaro", "visita": "Guadalajara", "fecha": "2025-08-17", "hora": "19:00"},
+        {"local": "Atlas", "visita": "Tijuana", "fecha": "2025-08-15", "hora": "21:00"},
+        {"local": "Necaxa", "visita": "Atl. San Luis", "fecha": "2025-08-17", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J11",
+      "inicio_jornada": "2025-08-22",
+      "fin_jornada": "2025-08-24",
+      "partidos": [
+        {"local": "Santos", "visita": "Toluca", "fecha": "2025-08-22", "hora": "19:00"},
+        {"local": "Cruz Azul", "visita": "América", "fecha": "2025-08-22", "hora": "21:00"},
+        {"local": "Monterrey", "visita": "Tigres", "fecha": "2025-08-23", "hora": "18:30"},
+        {"local": "Juárez", "visita": "León", "fecha": "2025-08-23", "hora": "19:00"},
+        {"local": "Mazatlán", "visita": "Pachuca", "fecha": "2025-08-23", "hora": "21:00"},
+        {"local": "Guadalajara", "visita": "Pumas", "fecha": "2025-08-24", "hora": "18:30"},
+        {"local": "Tijuana", "visita": "Querétaro", "fecha": "2025-08-24", "hora": "19:00"},
+        {"local": "Atl. San Luis", "visita": "Atlas", "fecha": "2025-08-22", "hora": "21:00"},
+        {"local": "Puebla", "visita": "Necaxa", "fecha": "2025-08-24", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J12",
+      "inicio_jornada": "2025-08-29",
+      "fin_jornada": "2025-08-31",
+      "partidos": [
+        {"local": "Toluca", "visita": "Tigres", "fecha": "2025-08-29", "hora": "19:00"},
+        {"local": "América", "visita": "León", "fecha": "2025-08-29", "hora": "21:00"},
+        {"local": "Pachuca", "visita": "Pumas", "fecha": "2025-08-30", "hora": "18:30"},
+        {"local": "Querétaro", "visita": "Atlas", "fecha": "2025-08-30", "hora": "19:00"},
+        {"local": "Necaxa", "visita": "Mazatlán", "fecha": "2025-08-30", "hora": "21:00"},
+        {"local": "Santos", "visita": "Cruz Azul", "fecha": "2025-08-31", "hora": "18:30"},
+        {"local": "Puebla", "visita": "Monterrey", "fecha": "2025-08-31", "hora": "19:00"},
+        {"local": "Atl. San Luis", "visita": "Juárez", "fecha": "2025-08-29", "hora": "21:00"},
+        {"local": "Tijuana", "visita": "Guadalajara", "fecha": "2025-08-31", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J13",
+      "inicio_jornada": "2025-09-05",
+      "fin_jornada": "2025-09-07",
+      "partidos": [
+        {"local": "León", "visita": "Toluca", "fecha": "2025-09-05", "hora": "19:00"},
+        {"local": "Pumas", "visita": "América", "fecha": "2025-09-05", "hora": "21:00"},
+        {"local": "Atlas", "visita": "Tigres", "fecha": "2025-09-06", "hora": "18:30"},
+        {"local": "Mazatlán", "visita": "Pachuca", "fecha": "2025-09-06", "hora": "19:00"},
+        {"local": "Guadalajara", "visita": "Querétaro", "fecha": "2025-09-06", "hora": "21:00"},
+        {"local": "Cruz Azul", "visita": "Santos", "fecha": "2025-09-07", "hora": "18:30"},
+        {"local": "Monterrey", "visita": "Puebla", "fecha": "2025-09-07", "hora": "19:00"},
+        {"local": "Juárez", "visita": "Atl. San Luis", "fecha": "2025-09-05", "hora": "21:00"},
+        {"local": "Necaxa", "visita": "Tijuana", "fecha": "2025-09-07", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J14",
+      "inicio_jornada": "2025-09-12",
+      "fin_jornada": "2025-09-14",
+      "partidos": [
+        {"local": "Toluca", "visita": "Pachuca", "fecha": "2025-09-12", "hora": "19:00"},
+        {"local": "América", "visita": "Querétaro", "fecha": "2025-09-12", "hora": "21:00"},
+        {"local": "Tigres", "visita": "Mazatlán", "fecha": "2025-09-13", "hora": "18:30"},
+        {"local": "Santos", "visita": "León", "fecha": "2025-09-13", "hora": "19:00"},
+        {"local": "Puebla", "visita": "Pumas", "fecha": "2025-09-13", "hora": "21:00"},
+        {"local": "Atl. San Luis", "visita": "Atlas", "fecha": "2025-09-14", "hora": "18:30"},
+        {"local": "Tijuana", "visita": "Guadalajara", "fecha": "2025-09-14", "hora": "19:00"},
+        {"local": "Necaxa", "visita": "Cruz Azul", "fecha": "2025-09-12", "hora": "21:00"},
+        {"local": "Juárez", "visita": "Monterrey", "fecha": "2025-09-14", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J15",
+      "inicio_jornada": "2025-09-19",
+      "fin_jornada": "2025-09-21",
+      "partidos": [
+        {"local": "Querétaro", "visita": "Toluca", "fecha": "2025-09-19", "hora": "19:00"},
+        {"local": "Mazatlán", "visita": "América", "fecha": "2025-09-19", "hora": "21:00"},
+        {"local": "Guadalajara", "visita": "Tigres", "fecha": "2025-09-20", "hora": "18:30"},
+        {"local": "Cruz Azul", "visita": "León", "fecha": "2025-09-20", "hora": "19:00"},
+        {"local": "Monterrey", "visita": "Santos", "fecha": "2025-09-20", "hora": "21:00"},
+        {"local": "Juárez", "visita": "Puebla", "fecha": "2025-09-21", "hora": "18:30"},
+        {"local": "Atlas", "visita": "Necaxa", "fecha": "2025-09-21", "hora": "19:00"},
+        {"local": "Pachuca", "visita": "Atl. San Luis", "fecha": "2025-09-19", "hora": "21:00"},
+        {"local": "Pumas", "visita": "Tijuana", "fecha": "2025-09-21", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J16",
+      "inicio_jornada": "2025-09-26",
+      "fin_jornada": "2025-09-28",
+      "partidos": [
+        {"local": "Toluca", "visita": "Mazatlán", "fecha": "2025-09-26", "hora": "19:00"},
+        {"local": "América", "visita": "Guadalajara", "fecha": "2025-09-26", "hora": "21:00"},
+        {"local": "Tigres", "visita": "Cruz Azul", "fecha": "2025-09-27", "hora": "18:30"},
+        {"local": "León", "visita": "Monterrey", "fecha": "2025-09-27", "hora": "19:00"},
+        {"local": "Santos", "visita": "Juárez", "fecha": "2025-09-27", "hora": "21:00"},
+        {"local": "Puebla", "visita": "Atlas", "fecha": "2025-09-28", "hora": "18:30"},
+        {"local": "Atl. San Luis", "visita": "Pumas", "fecha": "2025-09-28", "hora": "19:00"},
+        {"local": "Tijuana", "visita": "Pachuca", "fecha": "2025-09-26", "hora": "21:00"},
+        {"local": "Necaxa", "visita": "Querétaro", "fecha": "2025-09-28", "hora": "21:00"}
+      ]
+    },
+    {
+      "numero": "J17",
+      "inicio_jornada": "2025-10-03",
+      "fin_jornada": "2025-10-05",
+      "partidos": [
+        {"local": "Guadalajara", "visita": "Toluca", "fecha": "2025-10-03", "hora": "19:00"},
+        {"local": "Cruz Azul", "visita": "América", "fecha": "2025-10-03", "hora": "21:00"},
+        {"local": "Monterrey", "visita": "Tigres", "fecha": "2025-10-04", "hora": "18:30"},
+        {"local": "Juárez", "visita": "León", "fecha": "2025-10-04", "hora": "19:00"},
+        {"local": "Atlas", "visita": "Santos", "fecha": "2025-10-04", "hora": "21:00"},
+        {"local": "Pumas", "visita": "Puebla", "fecha": "2025-10-05", "hora": "18:30"},
+        {"local": "Querétaro", "visita": "Necaxa", "fecha": "2025-10-05", "hora": "19:00"},
+        {"local": "Pachuca", "visita": "Atl. San Luis", "fecha": "2025-10-03", "hora": "21:00"},
+        {"local": "Mazatlán", "visita": "Tijuana", "fecha": "2025-10-05", "hora": "21:00"}
+      ]
+    }
+  ]
+}
