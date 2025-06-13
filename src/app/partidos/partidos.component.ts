@@ -26,26 +26,23 @@ export class PartidosComponent implements OnInit {
 
   constructor(private partidosService: PartidosService) {}
 
-  /*ngOnInit(): void {
-    this.partidosService.getJornadas().subscribe({
-      next: (data) => {
-        this.jornadas = data.sort((a, b) => a.numero.localeCompare(b.numero));
-        this.loading = false;
-      },
-      error: (err) => {
-        console.error('Error al cargar jornadas:', err);
-        this.loading = false;
-      }
-    });
-  }*/
   ngOnInit(): void {
     this.partidosService.getJornadas().subscribe({
       next: (data) => {
+      // Ordena jornadas por número
         this.jornadas = data.sort((a, b) => {
-          // Extrae el número después de la 'J' y convierte a entero
           const numA = parseInt(a.numero.replace(/\D/g, ''), 10);
           const numB = parseInt(b.numero.replace(/\D/g, ''), 10);
           return numA - numB;
+        }).map(jornada => {
+          // Ordena partidos por fecha y hora ascendente
+          const partidosOrdenados = [...jornada.partidos].sort((a, b) => {
+            // Combina fecha y hora en un solo Date para comparar
+            const fechaA = new Date(`${a.fecha}T${a.hora}`);
+            const fechaB = new Date(`${b.fecha}T${b.hora}`);
+            return fechaA.getTime() - fechaB.getTime();
+          });
+          return { ...jornada, partidos: partidosOrdenados };
         });
         this.loading = false;
       },
