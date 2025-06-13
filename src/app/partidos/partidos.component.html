@@ -1,25 +1,49 @@
-<div class="p-4">
-  <h2 class="text-xl font-bold mb-4">Partidos de Liga MX</h2>
-  <div *ngIf="loading" class="text-center py-8">Cargando jornadas...</div>
+<div class="p-4 bg-white min-h-screen">
+  <h2 class="text-2xl font-bold mb-6 text-[#0a2342]">Partidos de Liga MX</h2>
+  <div *ngIf="loading" class="text-center py-8 text-[#0a2342] font-semibold">Cargando jornadas...</div>
   <ng-container *ngIf="!loading">
-    <div *ngFor="let jornada of jornadas" class="mb-8 bg-gray-800 rounded-lg shadow">
-      <div class="px-4 py-2 border-b border-gray-700 font-semibold text-lg">
-        Jornada {{ jornada.numero }} <span class="text-sm text-gray-400 ml-2">({{ jornada.inicio_jornada }} al {{ jornada.fin_jornada }})</span>
+    <div *ngFor="let jornada of jornadas" class="mb-10 rounded-lg shadow border border-[#1e90ff] bg-white">
+      <div class="px-4 py-2 border-b border-[#1e90ff] font-bold text-lg bg-[#0a2342] text-white rounded-t-lg">
+        Jornada {{ jornada.numero }}
+        <span class="text-sm text-[#e0e7ef] ml-2 font-normal">
+          ({{ jornada.inicio_jornada }} al {{ jornada.fin_jornada }})
+        </span>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-4">
-        <div *ngFor="let partido of jornada.partidos" class="flex items-center justify-between bg-gray-900 rounded p-2 mb-2 shadow-sm">
-          <div class="flex items-center gap-2">
-            <span class="font-bold">{{ partido.local }}</span>
-            <span class="text-gray-400">vs</span>
-            <span class="font-bold">{{ partido.visita }}</span>
-          </div>
-          <div class="flex flex-col text-right">
-            <span class="text-sm text-gray-300">{{ partido.fecha }} {{ partido.hora }}</span>
-            <span *ngIf="partido.marcadorLocal !== undefined && partido.marcadorVisita !== undefined" class="font-bold text-lg">
-              {{ partido.marcadorLocal }} - {{ partido.marcadorVisita }}
-            </span>
-          </div>
-        </div>
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-[#0a2342]">
+          <thead>
+            <tr class="bg-[#e0e7ef] text-[#0a2342]">
+              <th class="px-4 py-2 text-left">Datos</th>
+              <th class="px-4 py-2 text-center">Local</th>
+              <th class="px-2 py-2 text-center">Vs</th>
+              <th class="px-4 py-2 text-center">Visita</th>
+              <th class="px-4 py-2 text-center">Marcador</th>
+              <th class="px-4 py-2 text-center">Fecha y Hora</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let partido of jornada.partidos; let i = index"
+                [ngClass]="i % 2 === 0 ? 'bg-white' : 'bg-[#f5f8fa]'">
+              <td class="px-4 py-2">
+                <div class="font-semibold">{{ partido.fecha | date:'fullDate' }}</div>
+                <div class="text-xs">Temporada 2025</div>
+                <div class="text-xs">Jornada {{ jornada.numero }}</div>
+              </td>
+              <td class="px-4 py-2 text-center font-bold">{{ partido.local }}</td>
+              <td class="px-2 py-2 text-center text-[#1e90ff] font-bold">vs</td>
+              <td class="px-4 py-2 text-center font-bold">{{ partido.visita }}</td>
+              <td class="px-4 py-2 text-center font-bold">
+                <span *ngIf="partido.marcadorLocal !== undefined && partido.marcadorVisita !== undefined">
+                  {{ partido.marcadorLocal }} - {{ partido.marcadorVisita }}
+                </span>
+                <span *ngIf="partido.marcadorLocal === undefined || partido.marcadorVisita === undefined" class="text-gray-400">-</span>
+              </td>
+              <td class="px-4 py-2 text-center">
+                {{ partido.fecha }} {{ partido.hora }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </ng-container>

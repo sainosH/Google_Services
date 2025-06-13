@@ -1,0 +1,127 @@
+/* Fondo general */
+body, .p-4 {
+  background: #f5f8fa;
+}
+
+/* Título principal */
+h2 {
+  color: #0a2342;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de cada jornada */
+.jornada-container {
+  background: #fff;
+  border: 2px solid #1e90ff;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2px 8px rgba(30, 144, 255, 0.08);
+}
+
+/* Encabezado de jornada */
+.jornada-header {
+  background: #0a2342;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px 12px 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid #1e90ff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.jornada-header span {
+  color: #e0e7ef;
+  font-size: 0.95rem;
+  font-weight: normal;
+}
+
+/* Tabla de partidos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+thead tr {
+  background: #e0e7ef;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+th {
+  color: #0a2342;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+tbody tr {
+  transition: background 0.2s;
+}
+
+tbody tr:nth-child(even) {
+  background: #f5f8fa;
+}
+
+tbody tr:nth-child(odd) {
+  background: #fff;
+}
+
+tbody tr:hover {
+  background: #dbeafe;
+}
+
+td {
+  color: #0a2342;
+}
+
+td .font-semibold {
+  font-weight: 600;
+}
+
+td .text-xs {
+  font-size: 0.85rem;
+  color: #1e90ff;
+}
+
+td .text-gray-400 {
+  color: #b0b8c1;
+}
+
+td .text-[#1e90ff] {
+  color: #1e90ff;
+}
+
+td .font-bold {
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(30, 144, 255, 0.08);
+  }
+  td {
+    text-align: left;
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #e0e7ef;
+  }
+}
+
+/* Scroll horizontal para tablas en pantallas pequeñas */
+.overflow-x-auto {
+  overflow-x: auto;
+}
