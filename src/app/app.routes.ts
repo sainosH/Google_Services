@@ -78,6 +78,7 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { EquiposComponent } from './equipos/equipos.component';
+import { PartidosComponent } from './partidos/partidos.component';
 import { inject } from '@angular/core';
 import { Auth } from '@angular/fire/auth';
 import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
@@ -118,6 +119,7 @@ export const routes: Routes = [
         path: 'equipos',
         component: EquiposComponent,
       },
+      {path: 'partidos', component: PartidosComponent},
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
     ],
   },
