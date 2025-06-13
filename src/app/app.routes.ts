@@ -1,3 +1,4 @@
+
 /*import { Routes, Router } from '@angular/router'; // Añade Router aquí
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -95,17 +96,28 @@ const isLoggedIn = () => {
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  {path: '',
+  {
+    path: '',
     component: AuthLayoutComponent,
     canActivate: [isLoggedIn],
     children: [
       {
-        path: 'dashboard', loadComponent: () =>
+        path: 'dashboard',
+        loadComponent: () =>
           import('./pages/dashboard/dashboard.component').then(
-            (m) => m.DashboardComponent),
+            (m) => m.DashboardComponent
+          ),
       },
       {
-        path: 'equipos',component: EquiposComponent,
+        path: 'prediccion',
+        loadComponent: () =>
+          import('./pages/prediccion/prediccion.component').then(
+            (m) => m.PrediccionComponent
+          ),
+      },
+      {
+        path: 'equipos',
+        component: EquiposComponent,
       },
       {path: 'partidos', component: PartidosComponent},
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
